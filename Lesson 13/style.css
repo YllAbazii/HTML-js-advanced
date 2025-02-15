@@ -1,0 +1,51 @@
+ul{
+    list-style-image: url("./img/Car-PNG.webp");
+}
+
+/* ol{
+    list-style:lower-alpha; 
+    padding: 0;
+    border: 2px aqua;
+}
+
+ol li{
+  background-color: blueviolet;  
+ padding: 10px;
+ margin-left: 10px;
+}
+
+ol li{
+    border: 2px palegreen;
+} */
+
+.List3{
+    border-left: 5px solid green;
+    background-color: #f1f1f1;
+    list-style-type: none;
+    padding: 15px 25px;
+    font-size: 10px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td, tr{
+    border: 1px #eee;
+    padding: 15px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: chartreuse;
+}
+
+tbody tr:nth-child(even){
+    background-color: crimson;
+}
+
+div{
+    overflow: scroll;
+    background-color: crimson;
+    width: 300px;
+    height: 100px;
+}
