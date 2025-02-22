@@ -1,0 +1,35 @@
+article p{
+    background-color: aqua;
+    color: azure;
+    padding: 20px;
+}
+
+article >p{
+    background-color: blueviolet;
+}
+
+article~ p{
+    background-color: chartreuse;
+    color: black;
+}
+
+article+ p{
+    background-color: brown;
+}
+ input:out-of-range{ 
+    border: 3px solid red;
+}
+ span:first-of-type{
+  background-color: coral;
+  color: aliceblue;
+  padding: 10px;
+ }
+ form{
+    margin-top: 20px;
+ }
+ input:invalid{
+    border: 2px solid red;
+ }
+ input:valid{
+    border: 2px solid green;
+ }
