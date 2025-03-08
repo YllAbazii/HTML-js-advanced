@@ -1,0 +1,40 @@
+div.gallery{
+    margin: 12px;
+    border: 5px #ccc;
+    float: left;
+    width: 180px;
+}
+div.gallery:hover{
+    border: 3px #777;
+}
+div.gallery img{
+    width: 100%;
+    height: auto;
+}
+div.desc{
+    padding: 15px;
+    text-emphasis: center;
+}
+a[href="https://shkolladigjitale.com/"]{
+    color: cadetblue;
+    font-size: large;
+    font-family: fantasy;
+}
+p[class*="ds"]{
+    background-color: blue;
+    color: white;
+    padding:20px;
+}
+div[id~="ds"]{
+    background-color: aqua;
+    color: white;
+    padding: 20px;
+}
+img[title^="Blue"]{
+    border: 5px solid black;
+}
+h1[class|=heading]{
+    background-color: blueviolet;
+    padding: 20px;
+    color: white;
+}
