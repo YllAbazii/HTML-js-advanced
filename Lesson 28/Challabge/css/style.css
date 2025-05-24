@@ -1,0 +1,27 @@
+.circle{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+
+
+.shape_rect
+{
+	width: 200px;
+	height: 100px;
+	background-color: red;
+}
+
+.shape_triangle{
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-bottom:100px solid red;
+}
+
+
+.hide{
+	display: none;
+}
