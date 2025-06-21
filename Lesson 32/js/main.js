@@ -1,51 +1,113 @@
-var input=document.getElementById("input_id")
-var button=document.getElementById("btn_id")
-var text=document.getElementById("teksti_id")
+var input = document.getElementById('input_id');
+var button = document.getElementById('btn_id');
+var text = document.getElementById('teksti_id');
 
-button.onclick= function(){
-    text.innerHTML = input.value
+
+button.onclick = function(){
+    text.innerHTML = input.value;
 }
 
-var text="The best school in the world is Digital School";
-var results=text.search('Digital School');
-document.getElementById("results1").innerHTML=results
 
-var text="The best school in the world is Digital School";
-var results=text.replace(/Digital School/,"another school");
-document.getElementById("results2").innerHTML=results
+ var text = "The best school in the world is Digital School!";
+ var result = text.search("Digital School");
+ document.getElementById("result1").innerHTML = result;
 
-var text="The best school in the world is Digital School";
-var results=text.search(/Digital School/);
-document.getElementById("results3").innerHTML=results
 
-var teksti1="abcdef";
-var result=new RegExp('abc')
-document.getElementById("results4").innerHTML=result.test(teksti1)
 
-var teksti2="My school is the best school in the world  ";
-var result2=  /school/g
-document.getElementById("results5").innerHTML=teksti2.match(result2)
 
-var teksti3="My school is the best school in the world  ";
-var result3=  /i/g
-document.getElementById("results6").innerHTML=teksti3.match(result3)
+ var text = "The best school in the world is Digital School!";
+ var result = text.search(/Digital School/);
+document.getElementById("result2").innerHTML = result;
 
-var teksti4="My school is the best school in the world  ";
-var result4=  /[abc ]/g
-document.getElementById("results7").innerHTML=teksti4.match(result4)
 
-var teksti5="My school is top 10 in the world";
-var result5=  /[0-9]/g
-document.getElementById("results8").innerHTML=teksti5.match(result5) 
 
-var teksti5="My school is top best  in the world";
-var result5=  /(top|best|world)/g
-document.getElementById("results9").innerHTML=teksti5.match(result5)   
+ var text = "The best school in the world is Digital School!";
+ var result = text.replace(/Digital School/,"Another School");
+ document.getElementById("result3").innerHTML = result;
 
-var teksti5="100 percent";
-var result5=  /\d/g
-document.getElementById("results10").innerHTML=teksti5.match(result5)   
 
-var teksti5="My school is top best  in the world";
-var result5=  /\s/g
-document.getElementById("results11").innerHTML=teksti5.match(result5)  
+
+ var text = "abcdef";
+ var regex = new RegExp('abc')
+document.getElementById("result4").innerHTML = regex.test(text);
+
+
+
+ var text = "My school is the best school in the world!";
+ var regex = /school/g;
+document.getElementById("result5").innerHTML = text.match(regex);
+
+
+ var text = "Digital School is the best school in the world!";
+ var regex = /i/g;
+ document.getElementById("result6").innerHTML = text.match(regex);
+
+
+
+ var text = "Digital School is the best school in the world!"
+var regex = /[abc]/g;
+ document.getElementById("result7").innerHTML = text.match(regex);
+
+
+
+ var text = "Digital School is in top 10 best schools of the world!";
+ var regex = /[0-9]/g;
+ document.getElementById("result8").innerHTML = text.match(regex);
+
+
+
+
+ var text = "My school is the best school in the world!";
+ var regex = /(top|best|school)/g;
+ document.getElementById("result9").innerHTML = text.match(regex);
+
+
+
+ var text = "100 percent!";
+ var regex = /\d/g;
+document.getElementById("result10").innerHTML = text.match(regex);
+
+
+
+var text = "My school is the best school in the world!";
+ var regex = /\s/g;
+ document.getElementById("result11").innerHTML = text.match(regex);
+
+
+ var text = "heeeey how are yoeu";
+ var regex = /e+/g;
+ document.getElementById("result12").innerHTML = text.match(regex);
+
+
+  var text = "so,I hope we'll see eachother soon";
+ var regex = /so*/g;
+ document.getElementById("result13").innerHTML = text.match(regex);
+
+
+  var text = "hey,hi,hiiii";
+ var regex = /hi?/g;
+ document.getElementById("result14").innerHTML = text.match(regex);
+
+
+   var text = "hello,helloo,hellooo";
+ var regex = /o{3}/g;
+ document.getElementById("result15").innerHTML = text.match(regex);
+
+
+   var text = "hellooo,hellooooooooo,hellooooo";
+ var regex = /o{3,5}/g;
+ document.getElementById("result16").innerHTML = text.match(regex);
+
+
+    var text = "bestfriend ,boyfriend ,girlfriend";
+ var regex = /end$/g;
+ document.getElementById("result17").innerHTML = text.match(regex);
+
+
+     var text = "cat,catalog";
+ var regex = /^cat/g;
+ document.getElementById("result18").innerHTML = text.match(regex);
+
+
+
+
