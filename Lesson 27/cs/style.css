@@ -1,0 +1,131 @@
+ul#select li {
+    background-color: lightgrey;
+    margin-bottom: 15px;
+    padding: 20px;
+    color: white;
+    list-style-type: none;
+}
+
+ul#select{
+    padding: 0px;
+}
+ul#sort li{
+    background-color: #686de0;
+    margin-bottom: 15px;
+    padding: 15px;
+    color: white;
+    list-style-type: none;
+}
+
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f8;
+    color: #333;
+    padding: 40px;
+    line-height: 1.6;
+}
+
+/* Accordion Styling */
+#accorfion {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+#accorfion h3 {
+    background: #3498db;
+    color: #fff;
+    padding: 15px 20px;
+    margin: 0;
+    cursor: pointer;
+    border-top: 1px solid #2980b9;
+    border-radius: 5px 5px 0 0;
+}
+
+#accorfion div {
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+}
+
+/* Sortable List */
+#sort {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
+}
+
+#sort li {
+    padding: 15px 20px;
+    border-bottom: 1px solid #eee;
+    cursor: move;
+    background: #fefefe;
+    transition: background 0.2s;
+}
+
+#sort li:hover {
+    background: #f1f1f1;
+}
+
+#sort li:last-child {
+    border-bottom: none;
+}
+
+/* Tabs */
+#tabs {
+    max-width: 800px;
+    margin: 40px auto;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#tabs ul {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px 5px 0 0;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+#tabs ul li {
+    flex: 1;
+}
+
+#tabs ul li a {
+    display: block;
+    text-align: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+#tabs ul li a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+#tabs > div {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    background: white;
+    border-radius: 0 0 5px 5px;
+}
